@@ -14,7 +14,10 @@
         flex-direction: column;
         gap: 6px;
         transition: all .3s ease-in-out;
-        transform-origin: 6px px;
+        
+        & > span {
+          transform-origin: 6px 1px;
+        }
 
         &.open{
           span:first-child{
@@ -62,6 +65,18 @@
   
         .primary-navigation {
           display: none;
+          flex-direction: column;
+          position: absolute;
+          background-color: hsla(45, 79%, 89%);
+          padding: 48px;
+          z-index: 3;
+          top: 100px;
+          right: 50%;
+          border-radius: 32px;
+          text-align: center;
+          width: 80vw;
+          transform: translateX(50%);
+          box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.2);
         }
       }
     }

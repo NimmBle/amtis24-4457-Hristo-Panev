@@ -5,10 +5,6 @@
 
 // global/helper classes
 
-* {
-  outline: 1px solid #f00 !important;
-}
-
 .container {
   --max-width: 1280px;
   --sidePadding: 1rem;
@@ -49,5 +45,9 @@
 @media (max-width: 1050px) {
   .hidden {
     opacity: 0;
+  }
+
+  .Active {
+    display: flex !important;
   }
 }
